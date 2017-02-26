@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.aroras.iotdataviewer.channel.field_display">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_field_display" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:text="Current Value:"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/tv3"
+
+                android:textAlignment="center"
+                android:layout_marginTop="60dp"
+                android:layout_alignParentTop="true"
+                android:textSize="25sp"
+                />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/imageView"
+                android:layout_marginLeft="320dp" />
+
+            <TextView
+                android:text="Previous value:"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv4"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/tv3"
+
+                android:textSize="20sp"
+
+                />
+
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viww"
+                android:layout_below="@id/tv4"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentEnd="true"
+                >
+
+            </WebView>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:layout_below="@id/viww"
+                android:layout_marginTop="40dp"
+                android:focusable="true" />
+
+            <Button
+                android:text="Set frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner"
+                android:layout_marginTop="20dp"
+                android:id="@+id/button6"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editText10"
+                android:layout_below="@id/button6"
+                android:layout_marginTop="40dp"
+                android:hint="Enter threshold value" />
+
+            <Button
+                android:text="Set threshold value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText10"
+                android:layout_marginTop="20dp"
+                android:id="@+id/button7"
+                android:layout_centerHorizontal="true"/>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

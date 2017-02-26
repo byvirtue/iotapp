@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "406772468171",
+    "firebase_url": "https://iotdataviewer.firebaseio.com",
+    "project_id": "iotdataviewer",
+    "storage_bucket": "iotdataviewer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406772468171:android:438a12f9c67b3539",
+        "android_client_info": {
+          "package_name": "com.example.aroras.iotdataviewer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406772468171-de6578f0d0jfemns9m3g3fuhvjvlkl65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzWlh8e5maiV3hcwEBIxo_ZCC5cyLldWo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

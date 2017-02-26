@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">IoTDataViewer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_otp">Otp</string>
+    <string name="title_activity_channels">channels</string>
+    <string name="title_activity_createchannel">createchannel</string>
+    <string name="title_activity_display">display</string>
+    <string name="title_activity_field_display">field_display</string>
+    <string name="our_api">3A3YGKEN0ACFKMUN</string>
+    <string name="title_activity_searchchannel">searchchannel</string>
+    <string name="title_activity_password">password</string>
+    <string-array name="spinner_array">
+        <item>5 sec</item>
+        <item>15 sec</item>
+        <item>30 sec</item>
+        <item>5 min</item>
+        <item>30 min</item>
+        <item>1 hr</item>
+        <item>1 day</item>
+    </string-array>
+
+</resources>
